@@ -62,9 +62,9 @@ export function CTAStrip() {
             <Button
               size="lg"
               variant="outline"
-              className="border-white border-2 text-white hover:bg-white hover:text-primary font-semibold px-8 py-4 rounded-full text-lg backdrop-blur-sm"
+              className="border-white border-2 text-white hover:bg-white hover:text-foreground font-semibold px-8 py-4 rounded-full text-lg backdrop-blur-sm"
             >
-              <Phone className="w-5 h-5 mr-2" />
+              <Phone className="w-5 h-5 mr-2 text-white hover:text-foreground" />
               Enroll Now
             </Button>
           </motion.div>
