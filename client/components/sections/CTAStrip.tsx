@@ -54,9 +54,9 @@ export function CTAStrip() {
           >
             <Button
               size="lg"
-              className="bg-white text-primary hover:bg-white/90 font-semibold px-8 py-4 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-white text-foreground hover:bg-white/90 hover:text-foreground font-semibold px-8 py-4 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <MessageCircle className="w-5 h-5 mr-2" />
+              <MessageCircle className="w-5 h-5 mr-2 text-foreground" />
               Talk to a Mentor
             </Button>
             <Button
