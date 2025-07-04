@@ -18,11 +18,10 @@ export function Hero() {
           className="max-w-4xl mx-auto"
         >
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-            Turn Your Passion Into{" "}
-            <span className="text-[#80415e]">Purpose</span>
+            From <span className="text-[#80415e]">Zero to Yoga Hero</span>
             <br />
             <span className="text-2xl md:text-4xl font-medium text-muted-foreground">
-              Become a Certified Yoga Instructor in Just 4-6 Weeks
+              🚀 Master. Teach. Earn. Transform Lives in Just 4-6 Weeks
             </span>
           </h1>
 
