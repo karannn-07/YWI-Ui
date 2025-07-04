@@ -99,10 +99,10 @@ export function Curriculum() {
                     >
                       <Icon className={`w-10 h-10 text-[#80415e]`} />
                     </div>
-                    <CardTitle className="text-2xl font-bold text-[#80415e] mb-2">
+                    <CardTitle className="text-2xl font-bold text-gray-900 mb-2">
                       {section.title}
                     </CardTitle>
-                    <div className="text-sm text-muted-foreground font-medium">
+                    <div className="text-sm text-[#80415e] font-medium">
                       {index === 0
                         ? "Foundation Building"
                         : index === 1
@@ -122,9 +122,9 @@ export function Curriculum() {
                             delay: index * 0.2 + itemIndex * 0.1,
                           }}
                           viewport={{ once: true }}
-                          className="flex items-center text-muted-foreground hover:text-[#80415e] transition-colors duration-200"
+                          className="flex items-center text-gray-700 hover:text-[#80415e] transition-colors duration-200"
                         >
-                          <div className="w-3 h-3 bg-gradient-to-br from-[#80415e] to-[#80415e]/70 rounded-full mr-3 flex-shrink-0"></div>
+                          <div className="w-3 h-3 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full mr-3 flex-shrink-0"></div>
                           <span className="text-sm font-medium">{item}</span>
                         </motion.li>
                       ))}
