@@ -9,27 +9,30 @@ const testimonials = [
     location: "Mumbai",
     image: "/placeholder.svg",
     quote:
-      "I started teaching after just 1 month of completing the course. The support from Swasti team was incredible!",
+      "From complete beginner to earning ₹45,000/month in just 8 weeks! Swasti Bharat changed my entire life trajectory.",
     rating: 5,
-    outcome: "Now teaching at 3 studios",
+    outcome: "₹45K monthly income",
+    transformation: "Career + Health",
   },
   {
     name: "Rajesh Kumar",
     location: "Delhi",
     image: "/placeholder.svg",
     quote:
-      "Best investment I made for my career. The curriculum is comprehensive yet easy to follow for beginners.",
+      "Lost 15kg, cured my anxiety, and now run my own wellness center. This certification gave me everything I dreamed of.",
     rating: 5,
-    outcome: "Started my own yoga center",
+    outcome: "Own wellness center",
+    transformation: "Physical + Mental",
   },
   {
     name: "Anjali Patel",
     location: "Bangalore",
     image: "/placeholder.svg",
     quote:
-      "The online format with live sessions was perfect for my schedule. Amazing mentorship throughout the journey.",
+      "Teaching 50+ students online while working my day job. The flexibility and income have been life-changing!",
     rating: 5,
-    outcome: "Teaching 20+ students monthly",
+    outcome: "50+ online students",
+    transformation: "Financial Freedom",
   },
 ];
 
@@ -45,10 +48,16 @@ export function Testimonials() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Real <span className="text-primary">Success Stories</span>
+            Real Lives, Real{" "}
+            <span className="text-[#80415e]">Transformations</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            See what our graduates are achieving in their yoga teaching careers
+            From struggling with health issues to building thriving yoga careers
+            -
+            <span className="font-semibold text-[#80415e]">
+              {" "}
+              these are their incredible journeys
+            </span>
           </p>
         </motion.div>
 
@@ -100,10 +109,17 @@ export function Testimonials() {
                   </div>
 
                   {/* Outcome Badge */}
-                  <div className="mt-4 p-3 bg-accent/10 rounded-lg border-l-4 border-accent">
-                    <p className="text-sm font-medium text-accent">
-                      ✨ {testimonial.outcome}
-                    </p>
+                  <div className="mt-4 space-y-2">
+                    <div className="p-3 bg-[#80415e]/10 rounded-lg border-l-4 border-[#80415e]">
+                      <p className="text-sm font-medium text-[#80415e]">
+                        💰 {testimonial.outcome}
+                      </p>
+                    </div>
+                    <div className="p-2 bg-accent/10 rounded-lg">
+                      <p className="text-xs font-medium text-accent">
+                        🌟 Transformation: {testimonial.transformation}
+                      </p>
+                    </div>
                   </div>
                 </CardContent>
               </Card>

@@ -58,7 +58,7 @@ const benefits = [
 
 export function InfoCards() {
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-gradient-to-r from-[#FFE9D1] to-[#FFE8E8]">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -68,11 +68,17 @@ export function InfoCards() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Why Choose <span className="text-primary">Swasti Bharat</span>?
+            Why <span className="text-[#80415e]">5000+ Students</span> Choose
+            Us?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to become a certified yoga instructor, delivered
-            with excellence and care.
+            The fastest, most affordable path to yoga instructor certification
+            with
+            <span className="font-semibold text-[#80415e]">
+              {" "}
+              lifetime earning potential
+            </span>{" "}
+            and personal transformation.
           </p>
         </motion.div>
 

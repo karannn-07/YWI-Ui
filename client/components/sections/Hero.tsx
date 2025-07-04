@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-background via-muted/30 to-secondary/20 overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-[#FFE8E8] via-[#FFE9D1] to-[#FFE8E8] overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,theme(colors.primary)_1px,transparent_1px)] bg-[length:60px_60px]"></div>
@@ -18,11 +18,11 @@ export function Hero() {
           className="max-w-4xl mx-auto"
         >
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-            Become a Certified{" "}
-            <span className="text-primary">Yoga Instructor</span>
+            Turn Your Passion Into{" "}
+            <span className="text-[#80415e]">Purpose</span>
             <br />
             <span className="text-2xl md:text-4xl font-medium text-muted-foreground">
-              Faster, Smarter, Affordable
+              Become a Certified Yoga Instructor in Just 4-6 Weeks
             </span>
           </h1>
 
@@ -32,8 +32,13 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed"
           >
-            Government-approved YWI Course by Swasti Bharat in less time, less
-            cost — without compromising quality
+            Join 5000+ successful instructors who transformed their lives with
+            our government-approved YWI certification.
+            <span className="font-semibold text-[#80415e]">
+              {" "}
+              Earn ₹25-80K monthly
+            </span>{" "}
+            while sharing the gift of wellness.
           </motion.p>
 
           <motion.div
@@ -44,16 +49,16 @@ export function Hero() {
           >
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-full text-lg"
+              className="bg-[#80415e] hover:bg-[#80415e]/90 text-white font-semibold px-8 py-3 rounded-full text-lg shadow-lg"
             >
-              Start Your Journey
+              🚀 Start Your Transformation
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 py-3 rounded-full text-lg"
+              className="border-[#80415e] text-[#80415e] hover:bg-[#80415e] hover:text-white font-semibold px-8 py-3 rounded-full text-lg"
             >
-              See Curriculum
+              📚 Download Free Guide
             </Button>
           </motion.div>
 

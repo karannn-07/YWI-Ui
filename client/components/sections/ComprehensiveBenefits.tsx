@@ -96,7 +96,7 @@ const comprehensiveBenefits = [
     icon: TrendingUp,
     title: "Career Growth Pathway",
     description: "Eligible for advanced levels, promotions, specializations",
-    emoji: "📈",
+    emoji: "��",
     category: "Growth",
     testimonial: "Already planning my advanced teacher training",
     author: "Vikram S.",
@@ -139,7 +139,7 @@ const stats = [
 
 export function ComprehensiveBenefits() {
   return (
-    <section className="py-20 bg-gradient-to-br from-orange-50 via-white to-green-50 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-[#FFE8E8] via-white to-[#FFE9D1] relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_25%,theme(colors.primary)_2px,transparent_2px)] bg-[length:60px_60px]"></div>
@@ -284,7 +284,7 @@ export function ComprehensiveBenefits() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-4 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                className="bg-[#80415e] hover:bg-[#80415e]/90 text-white font-semibold px-8 py-4 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                 <Award className="w-5 h-5 mr-2" />
                 Join Now - Transform Your Life
@@ -292,7 +292,7 @@ export function ComprehensiveBenefits() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 py-4 rounded-full text-lg"
+                className="border-[#80415e] text-[#80415e] hover:bg-[#80415e] hover:text-white font-semibold px-8 py-4 rounded-full text-lg"
               >
                 <BookOpen className="w-5 h-5 mr-2" />
                 Explore Complete Curriculum
