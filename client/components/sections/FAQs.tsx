@@ -101,7 +101,7 @@ export function FAQs() {
                 >
                   <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary transition-colors duration-200">
                     <div className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                       <span>{faq.question}</span>
                     </div>
                   </AccordionTrigger>

@@ -98,7 +98,7 @@ export function Comparison() {
                   <div
                     className={`text-center p-3 rounded-lg flex items-center justify-center ${
                       row.swastiWins
-                        ? "bg-accent/20 text-accent font-semibold"
+                        ? "bg-[#80415e]/20 text-[#80415e] font-semibold"
                         : "bg-muted text-muted-foreground"
                     }`}
                   >
