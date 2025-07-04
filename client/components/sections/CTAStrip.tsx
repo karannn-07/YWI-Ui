@@ -55,20 +55,8 @@ export function CTAStrip() {
       </div>
 
       {/* Floating Elements */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, delay: 0.8 }}
-        viewport={{ once: true }}
-        className="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl"
-      ></motion.div>
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, delay: 1 }}
-        viewport={{ once: true }}
-        className="absolute bottom-10 right-10 w-16 h-16 bg-white/10 rounded-full blur-xl"
-      ></motion.div>
+      <div className="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl opacity-50"></div>
+      <div className="absolute bottom-10 right-10 w-16 h-16 bg-white/10 rounded-full blur-xl opacity-50"></div>
     </section>
   );
 }
