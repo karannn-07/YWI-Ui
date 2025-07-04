@@ -14,45 +14,59 @@ import {
 const benefits = [
   {
     icon: CheckCircle,
-    title: "Govt-Approved Certification",
-    description: "Nationally recognized YWI certification",
-    color: "text-accent",
+    title: "Government Recognized Certification",
+    description: "YCB & AYUSH approved - valid nationwide for teaching",
+    color: "text-[#80415e]",
+    stat: "100%",
+    bgColor: "bg-[#80415e]/10",
   },
   {
     icon: Clock,
-    title: "Complete in Just a Few Weeks",
-    description: "Fast-track your certification journey",
-    color: "text-primary",
+    title: "Lightning Fast Completion",
+    description: "Get certified in 4-6 weeks vs 3-6 months elsewhere",
+    color: "text-green-600",
+    stat: "75%",
+    bgColor: "bg-green-100",
   },
   {
     icon: DollarSign,
-    title: "Affordable Fee Structure",
-    description: "Most competitive pricing in the market",
-    color: "text-accent",
+    title: "Massive Cost Savings",
+    description: "₹15-25K vs ₹35-60K at other institutes",
+    color: "text-blue-600",
+    stat: "60%",
+    bgColor: "bg-blue-100",
   },
   {
     icon: Phone,
-    title: "Expert Mentor Support",
-    description: "24/7 guidance from certified instructors",
-    color: "text-primary",
+    title: "24/7 Expert Support",
+    description: "Personal mentors + doubt clearing sessions anytime",
+    color: "text-purple-600",
+    stat: "24/7",
+    bgColor: "bg-purple-100",
   },
   {
     icon: Rocket,
-    title: "No Prior Experience Needed",
-    description: "Beginner-friendly curriculum design",
-    color: "text-accent",
+    title: "Zero Experience Required",
+    description: "Complete beginner to confident instructor transformation",
+    color: "text-orange-600",
+    stat: "0→100",
+    bgColor: "bg-orange-100",
   },
   {
     icon: Globe,
-    title: "Online + Live Sessions",
-    description: "Flexible learning with live interaction",
-    color: "text-primary",
+    title: "Hybrid Learning Model",
+    description: "Online theory + live practical sessions for flexibility",
+    color: "text-teal-600",
+    stat: "Hybrid",
+    bgColor: "bg-teal-100",
   },
   {
     icon: BookOpen,
-    title: "All Materials Included",
-    description: "Complete study materials and resources",
-    color: "text-accent",
+    title: "Complete Learning Package",
+    description: "All materials, certificates, and lifetime access included",
+    color: "text-indigo-600",
+    stat: "∞",
+    bgColor: "bg-indigo-100",
   },
 ];
 
@@ -95,19 +109,29 @@ export function InfoCards() {
                 whileHover={{ y: -5 }}
                 className="group"
               >
-                <Card className="h-full border-border hover:border-primary/30 transition-all duration-300 bg-white/70 backdrop-blur-sm">
-                  <CardContent className="p-6 text-center">
+                <Card className="h-full border-border hover:border-[#80415e]/30 transition-all duration-300 bg-gradient-to-br from-gray-50 to-gray-100 hover:shadow-xl">
+                  <CardContent className="p-6 text-center relative overflow-hidden">
+                    {/* Stat Badge */}
+                    <div className="absolute top-3 right-3 text-xs font-bold text-gray-500 bg-gray-200 px-2 py-1 rounded-full">
+                      {benefit.stat}
+                    </div>
+
                     <div
-                      className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-${benefit.color.split("-")[1]}/10 to-${benefit.color.split("-")[1]}/20 mb-4 group-hover:scale-110 transition-transform duration-300`}
+                      className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl ${benefit.bgColor} mb-4 group-hover:scale-110 transition-transform duration-300`}
                     >
                       <Icon className={`w-8 h-8 ${benefit.color}`} />
                     </div>
-                    <h3 className="text-lg font-semibold text-foreground mb-2">
+                    <h3 className="text-lg font-bold text-foreground mb-3">
                       {benefit.title}
                     </h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">
                       {benefit.description}
                     </p>
+
+                    {/* Bottom accent line */}
+                    <div
+                      className={`mt-4 h-1 ${benefit.bgColor} rounded-full`}
+                    ></div>
                   </CardContent>
                 </Card>
               </motion.div>

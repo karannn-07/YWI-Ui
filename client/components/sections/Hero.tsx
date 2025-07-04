@@ -62,24 +62,38 @@ export function Hero() {
             </Button>
           </motion.div>
 
-          {/* Trust Indicators */}
+          {/* Enhanced Trust Indicators */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="mt-12 flex flex-wrap justify-center items-center gap-8 text-sm text-muted-foreground"
+            className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto"
           >
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-accent rounded-full"></div>
-              <span>Government Approved</span>
+            <div className="bg-[#80415e]/10 p-4 rounded-xl text-center border border-[#80415e]/20">
+              <div className="text-2xl font-bold text-[#80415e] mb-1">✅</div>
+              <div className="text-sm font-medium text-[#80415e]">
+                Government
+              </div>
+              <div className="text-xs text-muted-foreground">Approved</div>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-accent rounded-full"></div>
-              <span>500+ Successful Students</span>
+            <div className="bg-[#80415e]/10 p-4 rounded-xl text-center border border-[#80415e]/20">
+              <div className="text-2xl font-bold text-[#80415e] mb-1">
+                5000+
+              </div>
+              <div className="text-sm font-medium text-[#80415e]">Success</div>
+              <div className="text-xs text-muted-foreground">Stories</div>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-accent rounded-full"></div>
-              <span>Quick Certification</span>
+            <div className="bg-[#80415e]/10 p-4 rounded-xl text-center border border-[#80415e]/20">
+              <div className="text-2xl font-bold text-[#80415e] mb-1">⚡</div>
+              <div className="text-sm font-medium text-[#80415e]">
+                4-6 Weeks
+              </div>
+              <div className="text-xs text-muted-foreground">Fast Track</div>
+            </div>
+            <div className="bg-[#80415e]/10 p-4 rounded-xl text-center border border-[#80415e]/20">
+              <div className="text-2xl font-bold text-[#80415e] mb-1">💰</div>
+              <div className="text-sm font-medium text-[#80415e]">₹25-80K</div>
+              <div className="text-xs text-muted-foreground">Monthly</div>
             </div>
           </motion.div>
         </motion.div>
