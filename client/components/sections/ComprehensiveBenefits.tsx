@@ -8,15 +8,10 @@ import {
   Home,
   Heart,
   UserCheck,
-  MessageSquare,
-  BookOpen,
   Clock,
-  TrendingUp,
-  Users,
-  Globe,
-  Sparkles,
   Check,
   Star,
+  BookOpen,
 } from "lucide-react";
 
 const comprehensiveBenefits = [
@@ -24,7 +19,6 @@ const comprehensiveBenefits = [
     icon: Award,
     title: "Government Approved Certification",
     description: "YCB & Ministry of AYUSH recognized nationwide",
-    emoji: "🏆",
     category: "Certification",
     testimonial: "The government recognition opened so many doors for me!",
     author: "Priya S.",
@@ -33,7 +27,6 @@ const comprehensiveBenefits = [
     icon: Briefcase,
     title: "Multiple Career Opportunities",
     description: "Instructor, wellness coach, studio owner, online classes",
-    emoji: "💼",
     category: "Career",
     testimonial: "Now I teach at 3 studios and run my online sessions",
     author: "Rajesh K.",
@@ -42,7 +35,6 @@ const comprehensiveBenefits = [
     icon: Home,
     title: "Work From Home Flexibility",
     description: "Earn ₹20-80K monthly with flexible schedules",
-    emoji: "🏠",
     category: "Lifestyle",
     testimonial: "Perfect work-life balance with great income",
     author: "Anjali M.",
@@ -51,7 +43,6 @@ const comprehensiveBenefits = [
     icon: Heart,
     title: "Transform Personal Health",
     description: "Heal stress, PCOS, immunity issues, back pain naturally",
-    emoji: "💚",
     category: "Wellness",
     testimonial: "Fixed my back pain while building a career",
     author: "Meera D.",
@@ -60,79 +51,23 @@ const comprehensiveBenefits = [
     icon: UserCheck,
     title: "Zero Experience Required",
     description: "Complete beginner to confident instructor journey",
-    emoji: "🌱",
     category: "Accessibility",
     testimonial: "Started as a complete beginner, now teaching daily",
     author: "Rohit P.",
   },
   {
-    icon: MessageSquare,
-    title: "Communication & Confidence",
-    description: "Develop teaching skills, public speaking, leadership",
-    emoji: "💬",
-    category: "Skills",
-    testimonial: "Gained confidence that changed my entire personality",
-    author: "Kavya L.",
-  },
-  {
-    icon: BookOpen,
-    title: "Holistic Curriculum",
-    description: "Theory, practical, teaching methodology - complete package",
-    emoji: "📚",
-    category: "Learning",
-    testimonial: "Most comprehensive course I've ever taken",
-    author: "Arjun T.",
-  },
-  {
     icon: Clock,
     title: "Fast-Track Completion",
     description: "Certified in weeks, not months - save time & money",
-    emoji: "⚡",
     category: "Efficiency",
     testimonial: "Got certified in 6 weeks, started earning immediately",
     author: "Sneha R.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Career Growth Pathway",
-    description: "Eligible for advanced levels, promotions, specializations",
-    emoji: "��",
-    category: "Growth",
-    testimonial: "Already planning my advanced teacher training",
-    author: "Vikram S.",
-  },
-  {
-    icon: Users,
-    title: "Mentor Support System",
-    description: "24/7 guidance, doubt sessions, community support",
-    emoji: "🤝",
-    category: "Support",
-    testimonial: "The mentors are always there when you need them",
-    author: "Deepika A.",
-  },
-  {
-    icon: Globe,
-    title: "International Recognition",
-    description: "Global demand, work abroad, international standards",
-    emoji: "🌍",
-    category: "Global",
-    testimonial: "Now teaching internationally via online platforms",
-    author: "Rahul G.",
-  },
-  {
-    icon: Sparkles,
-    title: "Spiritual & Mental Growth",
-    description: "Long-term emotional healing, inner peace, life purpose",
-    emoji: "✨",
-    category: "Transformation",
-    testimonial: "Found my life's purpose and inner peace",
-    author: "Sonia J.",
   },
 ];
 
 const stats = [
   { number: "5000+", label: "Certified Instructors", icon: Award },
-  { number: "₹25-80K", label: "Monthly Earning Potential", icon: TrendingUp },
+  { number: "₹25-80K", label: "Monthly Earning Potential", icon: Clock },
   { number: "100%", label: "Government Recognition", icon: Check },
   { number: "4-6 Weeks", label: "Fast Completion", icon: Clock },
 ];
@@ -155,7 +90,7 @@ export function ComprehensiveBenefits() {
           className="text-center mb-16"
         >
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-6 py-3 rounded-full font-semibold text-sm mb-6">
-            <Sparkles className="w-5 h-5" />
+            <Award className="w-5 h-5" />
             Complete YWI Certification Benefits
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
