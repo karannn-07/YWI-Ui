@@ -32,13 +32,12 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed"
           >
-            Join 5000+ successful instructors who transformed their lives with
-            our government-approved YWI certification.
+            Transform your passion into profession with India's fastest yoga
+            instructor certification program.
+            <br />
             <span className="font-semibold text-[#80415e]">
-              {" "}
-              Earn ₹25-80K monthly
-            </span>{" "}
-            while sharing the gift of wellness.
+              Government-approved • Expert mentorship • Lifetime support
+            </span>
           </motion.p>
 
           <motion.div
