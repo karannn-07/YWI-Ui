@@ -6,7 +6,7 @@ import { Check, X } from "lucide-react";
 const comparisonData = [
   {
     feature: "Duration",
-    swasti: "Just 4-6 Weeks",
+    swasti: "Just Few Week",
     others: "3-6 Months",
     swastiWins: true,
   },
