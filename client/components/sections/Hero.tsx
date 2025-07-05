@@ -18,10 +18,11 @@ export function Hero() {
           className="max-w-4xl mx-auto"
         >
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-            From <span className="text-[#80415e]">Zero to Yoga Hero</span>
+            Start Your Certified{" "}
+            <span className="text-[#80415e]">Yoga Career Today</span>
             <br />
             <span className="text-2xl md:text-4xl font-medium text-muted-foreground">
-              🚀 Master. Teach. Earn. Transform Lives in Just 4-6 Weeks
+              — with Swasti Bharat
             </span>
           </h1>
 
