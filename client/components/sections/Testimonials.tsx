@@ -6,33 +6,33 @@ import { Star, Quote } from "lucide-react";
 const testimonials = [
   {
     name: "Priya Sharma",
-    location: "Mumbai",
-    image: "/placeholder.svg",
     quote:
-      "From complete beginner to earning ���45,000/month in just 8 weeks! Swasti Bharat changed my entire life trajectory.",
+      "From complete beginner to earning ₹45,000/month in just 8 weeks! Swasti Bharat changed my entire life trajectory.",
     rating: 5,
-    outcome: "₹45K monthly income",
-    transformation: "Career + Health",
   },
   {
     name: "Rajesh Kumar",
-    location: "Delhi",
-    image: "/placeholder.svg",
     quote:
       "Lost 15kg, cured my anxiety, and now run my own wellness center. This certification gave me everything I dreamed of.",
     rating: 5,
-    outcome: "Own wellness center",
-    transformation: "Physical + Mental",
   },
   {
     name: "Anjali Patel",
-    location: "Bangalore",
-    image: "/placeholder.svg",
     quote:
       "Teaching 50+ students online while working my day job. The flexibility and income have been life-changing!",
     rating: 5,
-    outcome: "50+ online students",
-    transformation: "Financial Freedom",
+  },
+  {
+    name: "Meera Desai",
+    quote:
+      "The support system is incredible. My mentors guided me through every step of building my yoga studio.",
+    rating: 5,
+  },
+  {
+    name: "Vikram Singh",
+    quote:
+      "Best investment for my health and career. Now I'm helping others while earning a great income.",
+    rating: 5,
   },
 ];
 
@@ -61,49 +61,60 @@ export function Testimonials() {
           </p>
         </motion.div>
 
+        {/* Scrollable Testimonials Container */}
         <div className="relative max-w-7xl mx-auto">
-          <div className="flex gap-6 overflow-x-auto scrollbar-hide pb-4" style={{scrollSnapType: 'x mandatory'}}>
-            <div className="flex gap-6 min-w-max"
-          {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              viewport={{ once: true }}
-              className="group"
-              style={{scrollSnapAlign: 'start'}}
-            >
-              <Card className="w-80 h-full border-border hover:border-primary/30 transition-all duration-300 group-hover:shadow-lg relative overflow-hidden bg-white/80 backdrop-blur-sm flex-shrink-0">
-                <div className="absolute top-4 right-4 text-primary/20">
-                  <Quote className="w-8 h-8" />
-                </div>
-                <CardContent className="p-6">
-                  {/* Rating */}
-                  <div className="flex items-center gap-1 mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className="w-4 h-4 fill-[#80415e] text-[#80415e]"
-                      />
-                    ))}
+          <div
+            className="flex gap-6 overflow-x-auto scrollbar-hide pb-4 px-4"
+            style={{ scrollSnapType: "x mandatory" }}
+          >
+            {testimonials.map((testimonial, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="group flex-shrink-0"
+                style={{ scrollSnapAlign: "start" }}
+              >
+                <Card className="w-80 h-full border-border hover:border-[#80415e]/30 transition-all duration-300 group-hover:shadow-lg relative overflow-hidden bg-white/80 backdrop-blur-sm">
+                  <div className="absolute top-4 right-4 text-[#80415e]/20">
+                    <Quote className="w-8 h-8" />
                   </div>
+                  <CardContent className="p-6">
+                    {/* Rating */}
+                    <div className="flex items-center gap-1 mb-4">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className="w-4 h-4 fill-[#80415e] text-[#80415e]"
+                        />
+                      ))}
+                    </div>
 
-                  {/* Quote */}
-                  <p className="text-muted-foreground italic mb-6 leading-relaxed">
-                    "{testimonial.quote}"
-                  </p>
+                    {/* Quote */}
+                    <p className="text-muted-foreground italic mb-6 leading-relaxed text-base">
+                      "{testimonial.quote}"
+                    </p>
 
-                  {/* Profile */}
-                  <div className="text-center">
-                    <h4 className="font-semibold text-foreground text-lg">
-                      {testimonial.name}
-                    </h4>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
-          ))}
+                    {/* Profile */}
+                    <div className="text-center">
+                      <h4 className="font-semibold text-foreground text-lg">
+                        {testimonial.name}
+                      </h4>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Scroll Indicators */}
+          <div className="flex justify-center mt-6 gap-2">
+            <div className="w-2 h-2 bg-[#80415e] rounded-full"></div>
+            <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
+            <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
+          </div>
         </div>
 
         {/* Stats */}
