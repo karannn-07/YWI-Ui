@@ -12,18 +12,6 @@ export function Hero() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-5xl mx-auto">
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="inline-block mb-8"
-          >
-            <span className="bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full text-sm font-medium text-gray-700 border border-[#80415e]/20">
-              🏆 International Yoga Day Certified
-            </span>
-          </motion.div>
-
           {/* Main Heading - All Same Size */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
