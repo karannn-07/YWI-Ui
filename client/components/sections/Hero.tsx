@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-300 via-orange-200 to-yellow-200 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#FFE8E8] via-[#FFE9D1] to-[#FFE8E8] overflow-hidden">
       {/* Mandala Background Pattern */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 right-20 w-96 h-96 opacity-20">
+        <div className="absolute top-20 right-20 w-96 h-96 opacity-10">
           <svg
             viewBox="0 0 200 200"
-            className="w-full h-full text-orange-600 fill-current"
+            className="w-full h-full text-[#80415e] fill-current"
           >
             <defs>
               <pattern
@@ -74,7 +74,7 @@ export function Hero() {
             className="text-left space-y-8"
           >
             <div className="inline-block">
-              <span className="bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium text-gray-700 border border-orange-200">
+              <span className="bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium text-gray-700 border border-[#80415e]/20">
                 International Yoga Day Certified
               </span>
             </div>
@@ -82,7 +82,7 @@ export function Hero() {
             <h1 className="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">
               Start Your Certified
               <br />
-              <span className="text-orange-600">YOGA CAREER</span>
+              <span className="text-[#80415e]">YOGA CAREER</span>
               <br />
               <span className="text-2xl md:text-3xl font-medium text-gray-600">
                 with Swasti Bharat
@@ -97,14 +97,14 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 size="lg"
-                className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-full text-lg shadow-lg transform hover:scale-105 transition-all duration-200"
+                className="bg-[#80415e] hover:bg-[#80415e]/90 text-white font-semibold px-8 py-4 rounded-full text-lg shadow-lg transform hover:scale-105 transition-all duration-200"
               >
                 LEARN MORE
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-orange-500 text-orange-600 hover:bg-orange-500 hover:text-white font-semibold px-8 py-4 rounded-full text-lg transform hover:scale-105 transition-all duration-200"
+                className="border-2 border-[#80415e] text-[#80415e] hover:bg-[#80415e] hover:text-white font-semibold px-8 py-4 rounded-full text-lg transform hover:scale-105 transition-all duration-200"
               >
                 View Curriculum
               </Button>
@@ -139,7 +139,7 @@ export function Hero() {
               <div className="w-80 h-80 md:w-96 md:h-96">
                 <svg
                   viewBox="0 0 400 400"
-                  className="w-full h-full text-orange-400 fill-current opacity-60"
+                  className="w-full h-full text-[#80415e]/40 fill-current opacity-30"
                 >
                   <defs>
                     <radialGradient id="mandalaGrad" cx="50%" cy="50%" r="50%">
@@ -226,7 +226,7 @@ export function Hero() {
                 </defs>
                 {/* Meditation Pose Silhouette */}
                 <path
-                  d="M100 170 
+                  d="M100 170
                      C85 170 75 165 75 155
                      L75 140
                      C75 130 80 125 85 125
@@ -234,20 +234,20 @@ export function Hero() {
                      C120 125 125 130 125 140
                      L125 155
                      C125 165 115 170 100 170 Z
-                     
+
                      M100 125
                      C110 125 118 117 118 107
                      C118 97 110 89 100 89
                      C90 89 82 97 82 107
                      C82 117 90 125 100 125 Z
-                     
+
                      M75 140
                      L60 130
                      C55 127 50 130 50 135
                      L50 145
                      C50 150 55 153 60 150
                      L75 140 Z
-                     
+
                      M125 140
                      L140 130
                      C145 127 150 130 150 135
@@ -260,13 +260,13 @@ export function Hero() {
             </div>
 
             {/* Floating dots */}
-            <div className="absolute top-10 left-10 w-3 h-3 bg-orange-400 rounded-full animate-pulse"></div>
+            <div className="absolute top-10 left-10 w-3 h-3 bg-[#80415e]/60 rounded-full animate-pulse"></div>
             <div
-              className="absolute bottom-16 right-12 w-2 h-2 bg-yellow-400 rounded-full animate-pulse"
+              className="absolute bottom-16 right-12 w-2 h-2 bg-[#80415e]/40 rounded-full animate-pulse"
               style={{ animationDelay: "1s" }}
             ></div>
             <div
-              className="absolute top-20 right-8 w-2 h-2 bg-orange-300 rounded-full animate-pulse"
+              className="absolute top-20 right-8 w-2 h-2 bg-[#80415e]/50 rounded-full animate-pulse"
               style={{ animationDelay: "0.5s" }}
             ></div>
           </motion.div>
