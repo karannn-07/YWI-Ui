@@ -34,6 +34,24 @@ const testimonials = [
       "Best investment for my health and career. Now I'm helping others while earning a great income.",
     rating: 5,
   },
+  {
+    name: "Kavya Nair",
+    quote:
+      "The course materials were excellent and the live sessions made all the difference. Highly recommended!",
+    rating: 5,
+  },
+  {
+    name: "Arjun Reddy",
+    quote:
+      "Started my own yoga school after certification. The business guidance was invaluable for my success.",
+    rating: 5,
+  },
+  {
+    name: "Deepika Joshi",
+    quote:
+      "Perfect balance of theory and practical. Now I'm teaching at multiple studios with confidence.",
+    rating: 5,
+  },
 ];
 
 export function Testimonials() {
@@ -107,13 +125,6 @@ export function Testimonials() {
                 </Card>
               </motion.div>
             ))}
-          </div>
-
-          {/* Scroll Indicators */}
-          <div className="flex justify-center mt-6 gap-2">
-            <div className="w-2 h-2 bg-[#80415e] rounded-full"></div>
-            <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
-            <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
           </div>
         </div>
 
