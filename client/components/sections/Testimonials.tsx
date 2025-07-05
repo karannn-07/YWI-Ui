@@ -9,7 +9,7 @@ const testimonials = [
     location: "Mumbai",
     image: "/placeholder.svg",
     quote:
-      "From complete beginner to earning ₹45,000/month in just 8 weeks! Swasti Bharat changed my entire life trajectory.",
+      "From complete beginner to earning ���45,000/month in just 8 weeks! Swasti Bharat changed my entire life trajectory.",
     rating: 5,
     outcome: "₹45K monthly income",
     transformation: "Career + Health",
@@ -92,34 +92,10 @@ export function Testimonials() {
                   </p>
 
                   {/* Profile */}
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full flex items-center justify-center">
-                      <span className="text-primary font-semibold text-lg">
-                        {testimonial.name.charAt(0)}
-                      </span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground">
-                        {testimonial.name}
-                      </h4>
-                      <p className="text-sm text-muted-foreground">
-                        {testimonial.location}
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Outcome Badge */}
-                  <div className="mt-4 space-y-2">
-                    <div className="p-3 bg-[#80415e]/10 rounded-lg border-l-4 border-[#80415e]">
-                      <p className="text-sm font-medium text-[#80415e]">
-                        💰 {testimonial.outcome}
-                      </p>
-                    </div>
-                    <div className="p-2 bg-accent/10 rounded-lg">
-                      <p className="text-xs font-medium text-accent">
-                        🌟 Transformation: {testimonial.transformation}
-                      </p>
-                    </div>
+                  <div className="text-center">
+                    <h4 className="font-semibold text-foreground text-lg">
+                      {testimonial.name}
+                    </h4>
                   </div>
                 </CardContent>
               </Card>

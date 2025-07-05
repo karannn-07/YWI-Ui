@@ -214,7 +214,6 @@ export function ComprehensiveBenefits() {
                       <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full">
                         {benefit.category}
                       </span>
-                      <span className="text-2xl">{benefit.emoji}</span>
                     </div>
 
                     {/* Icon & Title */}
@@ -302,19 +301,19 @@ export function ComprehensiveBenefits() {
             {/* Trust Indicators */}
             <div className="flex flex-wrap justify-center items-center gap-6 mt-8 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-accent" />
+                <Check className="w-4 h-4 text-green-600" />
                 <span>Government Approved</span>
               </div>
               <div className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-accent" />
+                <Check className="w-4 h-4 text-green-600" />
                 <span>5000+ Success Stories</span>
               </div>
               <div className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-accent" />
+                <Check className="w-4 h-4 text-green-600" />
                 <span>Lifetime Support</span>
               </div>
               <div className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-accent" />
+                <Check className="w-4 h-4 text-green-600" />
                 <span>100% Satisfaction</span>
               </div>
             </div>

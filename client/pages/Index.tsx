@@ -8,8 +8,6 @@ import { ComprehensiveBenefits } from "@/components/sections/ComprehensiveBenefi
 import { Testimonials } from "@/components/sections/Testimonials";
 import { FAQs } from "@/components/sections/FAQs";
 import { CTAStrip } from "@/components/sections/CTAStrip";
-import { Footer } from "@/components/sections/Footer";
-
 export default function Index() {
   return (
     <div className="min-h-screen">
@@ -22,7 +20,6 @@ export default function Index() {
       <Testimonials />
       <FAQs />
       <CTAStrip />
-      <Footer />
     </div>
   );
 }

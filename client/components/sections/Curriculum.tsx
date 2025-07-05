@@ -124,7 +124,10 @@ export function Curriculum() {
                           viewport={{ once: true }}
                           className="flex items-center text-gray-700 hover:text-[#80415e] transition-colors duration-200"
                         >
-                          <div className="w-3 h-3 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full mr-3 flex-shrink-0"></div>
+                          <div
+                            className="w-3 h-3 rounded-full mr-3 flex-shrink-0"
+                            style={{ backgroundColor: "#FFE1FB" }}
+                          ></div>
                           <span className="text-sm font-medium">{item}</span>
                         </motion.li>
                       ))}

@@ -74,10 +74,10 @@ export function Comparison() {
               <div className="grid grid-cols-3 gap-4">
                 <div></div>
                 <CardTitle className="text-center text-[#80415e] font-bold text-lg">
-                  🏆 Swasti Bharat
+                  Swasti Bharat
                 </CardTitle>
                 <CardTitle className="text-center text-gray-600 font-bold text-lg">
-                  😔 Other Institutes
+                  Other Institutes
                 </CardTitle>
               </div>
             </CardHeader>
