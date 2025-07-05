@@ -61,7 +61,9 @@ export function Testimonials() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="relative max-w-7xl mx-auto">
+          <div className="flex gap-6 overflow-x-auto scrollbar-hide pb-4" style={{scrollSnapType: 'x mandatory'}}>
+            <div className="flex gap-6 min-w-max"
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
@@ -70,8 +72,9 @@ export function Testimonials() {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
               className="group"
+              style={{scrollSnapAlign: 'start'}}
             >
-              <Card className="h-full border-border hover:border-primary/30 transition-all duration-300 group-hover:shadow-lg relative overflow-hidden">
+              <Card className="w-80 h-full border-border hover:border-primary/30 transition-all duration-300 group-hover:shadow-lg relative overflow-hidden bg-white/80 backdrop-blur-sm flex-shrink-0">
                 <div className="absolute top-4 right-4 text-primary/20">
                   <Quote className="w-8 h-8" />
                 </div>
