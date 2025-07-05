@@ -48,51 +48,80 @@ export function Hero() {
           >
             <Button
               size="lg"
-              className="bg-[#80415e] hover:bg-[#80415e]/90 text-white font-semibold px-8 py-3 rounded-full text-lg shadow-lg"
+              className="bg-[#80415e] hover:bg-[#80415e]/90 text-white font-semibold px-12 py-4 rounded-full text-lg shadow-lg transform hover:scale-105 transition-all duration-200"
             >
-              🚀 Start Your Transformation
+              Start Your Journey
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-[#80415e] text-[#80415e] hover:bg-[#80415e] hover:text-white font-semibold px-8 py-3 rounded-full text-lg"
+              className="border-2 border-[#80415e] text-[#80415e] hover:bg-[#80415e] hover:text-white font-semibold px-12 py-4 rounded-full text-lg transform hover:scale-105 transition-all duration-200"
             >
-              📚 Download Free Guide
+              View Curriculum
             </Button>
           </motion.div>
 
-          {/* Enhanced Trust Indicators */}
+          {/* Redesigned Feature Cards */}
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto"
+            className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto"
           >
-            <div className="bg-[#80415e]/10 p-4 rounded-xl text-center border border-[#80415e]/20">
-              <div className="text-2xl font-bold text-[#80415e] mb-1">✅</div>
-              <div className="text-sm font-medium text-[#80415e]">
-                Government
+            <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border-l-4 border-[#80415e] hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="w-12 h-12 bg-gradient-to-br from-[#80415e] to-[#80415e]/70 rounded-xl flex items-center justify-center mb-4">
+                <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
+                  <div className="w-3 h-3 bg-[#80415e] rounded-full"></div>
+                </div>
               </div>
-              <div className="text-xs text-muted-foreground">Approved</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">
+                Government Certified
+              </h3>
+              <p className="text-sm text-gray-600">
+                YCB & AYUSH Ministry approved nationwide recognition
+              </p>
             </div>
-            <div className="bg-[#80415e]/10 p-4 rounded-xl text-center border border-[#80415e]/20">
-              <div className="text-2xl font-bold text-[#80415e] mb-1">
-                5000+
+
+            <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border-l-4 border-green-500 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-4">
+                <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
+                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                </div>
               </div>
-              <div className="text-sm font-medium text-[#80415e]">Success</div>
-              <div className="text-xs text-muted-foreground">Stories</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">
+                Fast Track Learning
+              </h3>
+              <p className="text-sm text-gray-600">
+                Complete certification in just 4-6 weeks vs 3-6 months
+              </p>
             </div>
-            <div className="bg-[#80415e]/10 p-4 rounded-xl text-center border border-[#80415e]/20">
-              <div className="text-2xl font-bold text-[#80415e] mb-1">⚡</div>
-              <div className="text-sm font-medium text-[#80415e]">
-                4-6 Weeks
+
+            <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border-l-4 border-blue-500 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4">
+                <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
+                  <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                </div>
               </div>
-              <div className="text-xs text-muted-foreground">Fast Track</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">
+                Expert Mentorship
+              </h3>
+              <p className="text-sm text-gray-600">
+                24/7 support from certified yoga masters and career guidance
+              </p>
             </div>
-            <div className="bg-[#80415e]/10 p-4 rounded-xl text-center border border-[#80415e]/20">
-              <div className="text-2xl font-bold text-[#80415e] mb-1">💰</div>
-              <div className="text-sm font-medium text-[#80415e]">₹25-80K</div>
-              <div className="text-xs text-muted-foreground">Monthly</div>
+
+            <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border-l-4 border-purple-500 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-4">
+                <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
+                  <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">
+                Career Success
+              </h3>
+              <p className="text-sm text-gray-600">
+                Earn ₹25-80K monthly with flexible teaching opportunities
+              </p>
             </div>
           </motion.div>
         </motion.div>
