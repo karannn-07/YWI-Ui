@@ -21,7 +21,7 @@ export function Hero() {
           >
             <span className="text-gray-800">Start Your Certified</span>
             <br />
-            <span className="text-gray-800">YOGA CAREER</span>
+            <span className="text-gray-800">Yoga Career</span>
             <br />
             <span className="text-[#80415e]">with Swasti Bharat</span>
           </motion.h1>
